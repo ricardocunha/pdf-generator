@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="EN-US">
+
+  <head>
+    <meta charset="utf-8" ></meta>
+    <meta name="author" content="torugo" ></meta>
+    <meta name="2.1.4.5.1" content="xfz" ></meta>
+    <meta name="127.0.0.1" content="abcde" ></meta>
+    <meta name="lgtm" content="ikr" ></meta>
+    <title>Prescription</title>
+    <style type="text/css">
+      @page {
+        /* 210mm 297mm */
+        size: A4;
+        margin-bottom: 150px;
+
+        @top-center {
+           content: element(header);
+        }
+
+        @bottom-center {
+           content: element(footer);
+        }
+      }
+
+
+      html {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.3px;
+        height: 100%;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        height: 100%;
+      }
+
+      p,
+      body {
+        margin: 0;
+      }
+
+      header {
+        page-break-inside: avoid;
+        position: running(header);
+      }
+
+      footer {
+        page-break-inside: avoid;
+        position: running(footer);
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .title {
+        font-size: 20rem;
+        font-weight: 700;
+        margin-bottom: 12rem;
+      }
+
+      .subtitle {
+        font-size: 14rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 12rem;
+      }
+
+      .text {
+        font-size: 14rem;
+        margin-bottom: 12rem;
+      }
+
+      /**/
+      .container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+      }
+
+      .medication-list {
+        flex: 1;
+        border-top: 1px solid #E0E0E0;
+        border-bottom: 1px solid #E0E0E0;
+        padding: 16rem 0;
+        margin-bottom: 16rem;
+      }
+
+      .physician-info {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .sign-block {
+        width: 100%;
+        height: 48rem;
+        border: 1rem solid #E0E0E0;
+        margin-bottom: 16rem;
+      }
+
+      .medication {
+        display: flex;
+        width: 100%;
+        margin-bottom: 42rem;
+        page-break-inside: avoid
+      }
+
+      .medication__index {
+        margin: 16rem 16rem 0 0;
+        color: #757575;
+        font-size: 16rem;
+      }
+
+      .medication__content {
+        padding-right: 16rem;
+        flex: 1;
+      }
+
+      .medication__title {
+        font-size: 16rem;
+        font-weight: 700;
+      }
+
+      .medication__quantity {
+        font-size: 14rem;
+        flex-shrink: 0;
+      }
+
+      .medication__instruction {
+        display: flex;
+        margin-top: 8rem;
+      }
+
+      .medication__instruction-icon {
+        flex-shrink: 0;
+        margin: 3rem 0 0 0;
+      }
+
+      .medication__instruction-text {
+        margin-left: 8rem;
+        font-size: 14rem;
+      }
+
+      .medication__info {
+        font-size: 12rem;
+        color: #757575;
+        line-height: 18rem;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <header>
+        <p class="title center">Receituário Simples</p>
+        <p class="subtitle">Identificação do paciente</p>
+        <p class="text"><b>Nome:</b> {{.Patient.Name}}</p>
+
+      </header>
+
+      <section class="medication-list">
+        <p class="subtitle">Prescrição</p>
+
+        {{range $index, $element := .Items}}
+        <div class='medication'>
+          <div class="medication__index">{{inc $index}}</div>
+
+          <div class="medication__content">
+            <p class="medication__title">{{$element.Title}}</p>
+
+            <p class="medication__info">{{$element.Details}}</p>
+
+            <div class="medication__instruction">
+              <svg class="medication__instruction-icon" width="16" height="14" viewBox="0 0 16 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 12H0V14H10V12ZM16 4H0V6H16V4ZM0 10H16V8H0V10ZM0 0V2H16V0H0Z" fill="#212121" />
+              </svg>
+
+              <p class="medication__instruction-text">{{$element.PatientInstruction}}</p>
+            </div>
+          </div>
+
+          <div class="medication__quantity">{{$element.Amount}}</div>
+        </div>
+        {{end}}
+
+      </section>
+
+      <footer>
+        <p class="subtitle">Identificação do médico</p>
+
+        <div class="physician-info">
+          <p class="text"><b>Nome:</b> {{.Physician.Name}}</p>
+          <p class="text"><b>{{.Physician.RegistryCouncil}}:</b> {{.Physician.RegistryNumber}}</p>
+          <p class="text"><b>UF:</b>{{.Physician.RegistryState}} </p>
+        </div>
+
+        <p class="subtitle">Assinatura do médico</p>
+
+        <div class="sign-block"></div>
+
+        <p class="text center"><b>Emitido em:</b> {{.PrescriptionDate}}</p>
+      </footer>
+      </div>
+  </body>
+
+</html>

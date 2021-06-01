@@ -1,0 +1,43 @@
+[
+	{
+		"name": "com.openhtmltopdf.css.parser.CSSPrimitiveValue",
+		"allPublicFields": true
+	},
+	{
+		"name": "com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl",
+		"methods": [{ "name": "<init>", "parameterTypes": [] }]
+	},
+	{
+		"name": "com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl",
+		"methods": [{ "name": "<init>", "parameterTypes": [] }]
+	},
+	{
+		"name": "java.lang.String",
+		"allDeclaredConstructors": true
+	},
+	{
+		"name": "java.lang.Thread",
+		"methods": [{ "name": "getContextClassLoader", "parameterTypes": [] }]
+	},
+	{
+		"name": "java.security.AccessController"
+	},
+	{
+		"name": "java.security.MessageDigestSpi"
+	},
+	{
+		"name": "java.security.SecureRandomParameters"
+	},
+	{
+		"name": "sun.security.provider.MD5",
+		"methods": [{ "name": "<init>", "parameterTypes": [] }]
+	},
+	{
+		"name": "sun.security.provider.NativePRNG",
+		"methods": [{ "name": "<init>", "parameterTypes": [] }]
+	},
+	{
+		"name": "sun.security.provider.SHA",
+		"methods": [{ "name": "<init>", "parameterTypes": [] }]
+	}
+]

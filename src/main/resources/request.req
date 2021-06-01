@@ -1,0 +1,6 @@
+--Boundary+0xAbCdEfGbOuNdArY--
+Content-Disposition: form-data; name="file";
+Content-Type: text/html
+
+<html lang="EN-US"><p>hello world</p></html>
+--Boundary+0xAbCdEfGbOuNdArY--
