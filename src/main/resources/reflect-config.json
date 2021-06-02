@@ -5,11 +5,151 @@
 	},
 	{
 		"name": "com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl",
-		"methods": [{ "name": "<init>", "parameterTypes": [] }]
+		"allDeclaredConstructors": true,
+		"allPublicConstructors": true,
+		"allDeclaredMethods": true,
+		"allPublicMethods": true
 	},
 	{
 		"name": "com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl",
-		"methods": [{ "name": "<init>", "parameterTypes": [] }]
+		"allDeclaredConstructors": true,
+		"allPublicConstructors": true,
+		"allDeclaredMethods": true,
+		"allPublicMethods": true
+	},
+	{
+		"name": "org.apache.xmpbox.schema.XMPSchema",
+		"allDeclaredConstructors": true,
+		"allPublicConstructors": true,
+		"allDeclaredMethods": true,
+		"allPublicMethods": true
+	},
+	{
+		"name": "org.apache.xmpbox.schema.XMPBasicSchema",
+		"allDeclaredConstructors": true,
+		"allPublicConstructors": true,
+		"allDeclaredMethods": true,
+		"allPublicMethods": true
+	},
+	{
+		"name": "org.apache.xmpbox.schema.XMPSchemaFactory",
+		"allDeclaredConstructors": true,
+		"allPublicConstructors": true,
+		"allDeclaredMethods": true,
+		"allPublicMethods": true
+	},
+	{
+		"name": "org.apache.xmpbox.schema.AdobePDFSchema",
+		"allDeclaredConstructors": true,
+		"allPublicConstructors": true,
+		"allDeclaredMethods": true,
+		"allPublicMethods": true
+	},
+	{
+		"name": "org.apache.xmpbox.schema.DublinCoreSchema",
+		"allDeclaredConstructors": true,
+		"allPublicConstructors": true,
+		"allDeclaredMethods": true,
+		"allPublicMethods": true
+	},
+	{
+		"name": "org.apache.xmpbox.schema.ExifSchema",
+		"allDeclaredConstructors": true,
+		"allPublicConstructors": true,
+		"allDeclaredMethods": true,
+		"allPublicMethods": true
+	},
+	{
+		"name": "org.apache.xmpbox.schema.PDFAExtensionSchema",
+		"allDeclaredConstructors": true,
+		"allPublicConstructors": true,
+		"allDeclaredMethods": true,
+		"allPublicMethods": true
+	},
+	{
+		"name": "org.apache.xmpbox.schema.PhotoshopSchema",
+		"allDeclaredConstructors": true,
+		"allPublicConstructors": true,
+		"allDeclaredMethods": true,
+		"allPublicMethods": true
+	},
+	{
+		"name": "org.apache.xmpbox.schema.TiffSchema",
+		"allDeclaredConstructors": true,
+		"allPublicConstructors": true,
+		"allDeclaredMethods": true,
+		"allPublicMethods": true
+	},
+	{
+		"name": "org.apache.xmpbox.schema.XMPBasicJobTicketSchema",
+		"allDeclaredConstructors": true,
+		"allPublicConstructors": true,
+		"allDeclaredMethods": true,
+		"allPublicMethods": true
+	},
+	{
+		"name": "org.apache.xmpbox.schema.XMPMediaManagementSchema",
+		"allDeclaredConstructors": true,
+		"allPublicConstructors": true,
+		"allDeclaredMethods": true,
+		"allPublicMethods": true
+	},
+	{
+		"name": "org.apache.xmpbox.schema.XMPageTextSchema",
+		"allDeclaredConstructors": true,
+		"allPublicConstructors": true,
+		"allDeclaredMethods": true,
+		"allPublicMethods": true
+	},
+	{
+		"name": "org.apache.xmpbox.schema.XMPRightsManagementSchema",
+		"allDeclaredConstructors": true,
+		"allPublicConstructors": true,
+		"allDeclaredMethods": true,
+		"allPublicMethods": true
+	},
+	{
+		"name": "org.apache.xmpbox.schema.XMPSchemaFactory",
+		"allDeclaredConstructors": true,
+		"allPublicConstructors": true,
+		"allDeclaredMethods": true,
+		"allPublicMethods": true
+	},
+
+	{
+		"name": "org.apache.xmpbox.XMPMetadata",
+		"allDeclaredConstructors": true,
+		"allPublicConstructors": true,
+		"allDeclaredMethods": true,
+		"allPublicMethods": true
+	},
+	{
+		"name": "org.apache.xmpbox.type.TextType",
+		"allDeclaredConstructors": true,
+		"allPublicConstructors": true,
+		"allDeclaredMethods": true,
+		"allPublicMethods": true
+	},
+	{
+		"name": "org.apache.xmpbox.type.TypeMapping",
+		"allDeclaredConstructors": true,
+		"allPublicConstructors": true,
+		"allDeclaredMethods": true,
+		"allPublicMethods": true
+	},
+	{
+		"name": "org.apache.xmpbox.type.StructuredType",
+		"allDeclaredConstructors": true,
+		"allPublicConstructors": true,
+		"allDeclaredMethods": true,
+		"allPublicMethods": true
+	},
+	{
+		"name": "org.apache.xmpbox.schema.PDFAIdentificationSchema",
+		"allDeclaredConstructors": true,
+		"allPublicConstructors": true,
+		"allDeclaredMethods": true,
+		"allPublicMethods": true
 	},
 	{
 		"name": "java.lang.String",
