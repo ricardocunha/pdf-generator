@@ -97,11 +97,11 @@
       <version>${openhtml.version}</version>
     </dependency>
 
-    <!-- <dependency> -->
-    <!--   <groupId>com.openhtmltopdf</groupId> -->
-    <!--   <artifactId>openhtmltopdf-svg-support</artifactId> -->
-    <!--   <version>${openhtml.version}</version> -->
-    <!-- </dependency> -->
+    <dependency>
+      <groupId>com.openhtmltopdf</groupId>
+      <artifactId>openhtmltopdf-svg-support</artifactId>
+      <version>${openhtml.version}</version>
+    </dependency>
   </dependencies>
   <build>
     <sourceDirectory>src/main/kotlin</sourceDirectory>
