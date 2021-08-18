@@ -18,7 +18,7 @@
 			{ "pattern": "\\Qorg/apache/pdfbox/resources/glyphlist/glyphlist.txt\\E" },
 			{ "pattern": "\\Qorg/apache/pdfbox/resources/glyphlist/zapfdingbats.txt\\E" },
 			{ "pattern": "\\Qorg/apache/pdfbox/resources/ttf/LiberationSans-Regular.ttf\\E" },
-			{ "pattern": ".*/.*ttf$" },
+			{ "pattern": "\\Qarial.ttf\\E" },
 			{ "pattern": "\\Qresources/conf/xhtmlrenderer.conf\\E" },
 			{ "pattern": "\\Qresources/css/XhtmlNamespaceHandler.css\\E" },
 			{ "pattern": "\\Qresources/schema/openhtmltopdf/catalog-special.xml\\E" }

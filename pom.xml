@@ -20,6 +20,7 @@
     <surefire-plugin.version>3.0.0-M5</surefire-plugin.version>
     <openhtml.version>1.0.8</openhtml.version>
   </properties>
+
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -96,15 +97,23 @@
       <version>${openhtml.version}</version>
     </dependency>
 
-    <!-- <dependency> -->
-    <!--   <groupId>com.openhtmltopdf</groupId> -->
-    <!--   <artifactId>openhtmltopdf-svg-support</artifactId> -->
-    <!--   <version>${openhtml.version}</version> -->
-    <!-- </dependency> -->
+    <dependency>
+      <groupId>com.openhtmltopdf</groupId>
+      <artifactId>openhtmltopdf-svg-support</artifactId>
+      <version>${openhtml.version}</version>
+    </dependency>
   </dependencies>
   <build>
     <sourceDirectory>src/main/kotlin</sourceDirectory>
     <testSourceDirectory>src/test/kotlin</testSourceDirectory>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <includes>
+          <include>**/*</include>
+        </includes>
+      </resource>
+    </resources>
     <plugins>
       <plugin>
         <groupId>io.quarkus</groupId>
